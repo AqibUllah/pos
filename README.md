@@ -1,98 +1,60 @@
-<p align="center">
-    <a href="https://github.com/sandinur157" target="_blank"><img src="https://raw.githubusercontent.com/sandinur157/tuturial-membuat-aplikasi-point-of-sales/main/public/img/logo.png" width="120"></a>
-</p>
 
-## Tentang Aplikasi
+## Point Of Sale (POS) System
 
-Aplikasi POS atau point of sales adalah aplikasi yang digunakan untuk mengelola transaksi pada sebuah toko atau oleh kasir. Aplikasi ini dibuat menggunakan Laravel v8.* dan minimal PHP v7.4 jadi apabila pada saat proses instalasi atau penggunaan terdapat error atau bug kemungkinan karena versi dari PHP yang tidak support.
+This Point of Sale (POS) system is a comprehensive and user-friendly web application built with Laravel, designed to streamline and optimize retail operations. With a fast and reliable interface, customizable theming, and intuitive navigation, users can effortlessly manage essential business activities.
 
 ### Beberapa Fitur yang tersedia:
-- Manajemen Kategori Produk
-- Manajemen Produk
-  - Multiple Delete
-  - Cetak Barcode
-- Manajemen Member atau Anggota
-  - Cetak Kartu Member
-- Manajemen Supplier
-- Transaksi Pengeluaran
-- Transaksi Pembelian
-- Transaksi Penjualan
-- Laporan Pendapatan atau Laba & Rugi
-  - Bulanan
-  - Harian
-  - Custom Tanggal
-- Custom Tipe Nota
-  - Nota Besar
-  - Nota Kecil / Thermal Nota
-- Manajemen User dan Profil
-- Pengaturan Toko
-  - Identitas
-  - Upload Desain Kartu Member
-  - Setting Diskon Member
-- User (Administrator, Kasir)
-- Grafik ChartJS pada Dashboard
+Key Features
 
-## Instalasi
-#### Via Git
+    Inventory Management: Organize and track products and categories efficiently.
+    Member and Supplier Management: Easily handle relationships with members and suppliers, storing critical contact details.
+    Transaction Management: Manage active and new transactions with detailed reporting and oversight.
+    Expenditure and Purchases Tracking: Record and analyze expenditures and purchases to monitor costs.
+    Sales and Revenue Analytics: View a graphical representation of revenue trends and detailed sales reports.
+    User Management and Roles: Control access levels for various users and assign specific roles as needed.
+    Customizable Dashboard: Gain insights from analytics on total categories, products, members, suppliers, and more.
+    Profile and POS Settings: Customize the POS system, including logo settings, theming options, and system configurations.
+    Secure Authentication: Safeguard data access with secure authentication, along with profile editing options.
+
+User Capabilities
+
+Users can navigate this POS system effortlessly, managing day-to-day retail operations and accessing critical data for business growth. The streamlined experience is enhanced with customizable settings, making it an adaptable solution for any retail environment.
+
+
+This POS system offers everything from basic inventory management to advanced analytics, ensuring users have the tools needed to make informed business decisions while enjoying a secure, fast, and customizable interface.
+
+Login Credentials:
+
+username: admin@gmail.com
+password: 123
+
+#### Clone Repository
 ```bash
-git clone https://github.com/sandinur157/tuturial-membuat-aplikasi-point-of-sales.git
+git clone https://github.com/AqibUllah/pos.git
 ```
-
-### Download ZIP
-[Link](https://github.com/sandinur157/tuturial-membuat-aplikasi-point-of-sales/archive/refs/heads/main.zip)
 
 ### Setup Aplikasi
-Jalankan perintah 
 ```bash
+composer install 
+or
 composer update
-```
-atau:
-```bash
-composer install
 ```
 Copy file .env dari .env.example
 ```bash
 cp .env.example .env
 ```
-Konfigurasi file .env
+
+Migrate database
 ```bash
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=example_app
-DB_USERNAME=root
-DB_PASSWORD=
+php artisan migrate --seed
 ```
-Opsional
-```bash
-APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=base64:QGRW4K7UVzS2M5HE2ZCLlUuiCtOIzRSfb38iWApkphE=
-APP_DEBUG=true
-APP_URL=http://example-app.test
-```
+
 Generate key
 ```bash
 php artisan key:generate
 ```
-Migrate database
-```bash
-php artisan migrate
-```
-Seeder table User, Pengaturan
-```bash
-php artisan db:seed
-```
-Menjalankan aplikasi
+Run Development Server
 ```bash
 php artisan serve
 ```
 
-## Link Tutorial
-
-- [Youtube](https://www.youtube.com/playlist?list=PLaN75JfoGz0Okf9f_7GbGM5IFaLXWx-_C)
-- [W2Learn](https://www.w2learn.com)
-
-## License
-
-[MIT license](https://opensource.org/licenses/MIT)
