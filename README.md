@@ -32,7 +32,7 @@ password: 123
 git clone https://github.com/AqibUllah/pos.git
 ```
 
-### Setup Aplikasi
+### Setup installation
 ```bash
 composer install 
 or
