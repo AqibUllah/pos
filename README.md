@@ -3,8 +3,7 @@
 
 This Point of Sale (POS) system is a comprehensive and user-friendly web application built with Laravel, designed to streamline and optimize retail operations. With a fast and reliable interface, customizable theming, and intuitive navigation, users can effortlessly manage essential business activities.
 
-### Beberapa Fitur yang tersedia:
-Key Features
+### Key Features:
 
     Inventory Management: Organize and track products and categories efficiently.
     Member and Supplier Management: Easily handle relationships with members and suppliers, storing critical contact details.
